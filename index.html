@@ -4,13 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Multiple Photo</title>
+  <style>
+    button {
+      background-color: #80dbba; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #108f3b; /* Green */
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <div style="text-align: center;">
     <img src="0.jpg" alt="" id="myImage" style="width: 800px; height: 500px;"><br>
-    <button onclick="changePhoto('1')">Chhota Bheem</button>
-    <button onclick="changePhoto('2')">Motu Patlu</button>
-    <button onclick="changePhoto('3')">Tom and Jerry</button>
+    <button onclick="changePhoto('1')" style="cursor: pointer;">Chhota Bheem</button>
+    <button onclick="changePhoto('2')" style="cursor: pointer;">Motu Patlu</button>
+    <button onclick="changePhoto('3')" style="cursor: pointer;">Tom and Jerry</button>
   </div>
   <script>
     function changePhoto(photoType){
