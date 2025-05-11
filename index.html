@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Photo</title>
+</head>
+<body>
+  <div style="text-align: center;">
+    <img src="0.jpg" alt="" id="myImage" style="width: 800px; height: 500px;"><br>
+    <button onclick="changePhoto('1')">Chhota Bheem</button>
+    <button onclick="changePhoto('2')">Motu Patlu</button>
+    <button onclick="changePhoto('3')">Tom and Jerry</button>
+  </div>
+  <script>
+    function changePhoto(photoType){
+      if(photoType==1){
+        document.getElementById('myImage').src="1.jpg";
+      }
+      else if(photoType==2){
+        document.getElementById('myImage').src="2.jpg";
+      }
+      else if(photoType==3){
+        document.getElementById('myImage').src="3.jpg";
+      }
+    }
+  </script>
+</body>
+</html>
